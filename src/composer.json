@@ -1,0 +1,29 @@
+{
+  "name": "Yoruchiaki/aliyun",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yoruchikia",
+      "email": "yoruchiaki@qq.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Yoruchiaki\\Sts\\": "src/",
+      "Aliyun\\Sts\\": "../vendor/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "aliases": {
+        "Sts": "Yoruchiaki\\Sts\\Facades\\Sts"
+      },
+      "providers": [
+        "Yoruchiaki\\Sts\\Providers\\StsServiceProvider"
+      ]
+    }
+  }
+}
